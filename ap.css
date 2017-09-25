@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	font-family:"Avenir Next", Arial, Helvetica, sans-serif;
+	line-height:140%;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	color: #663300;
+	background-image:url(images/background.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 30px;
+	padding-left: 30px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+figcaption {
+    font-family: Georgia, serif;
+    line-height: 120%;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+a:link {
+	color: #663300;
+	text-decoration:none;
+	border-bottom:1px dotted #3399CC;}
+a:visited {
+	color: #663300;
+	text-decoration:none;
+    border-bottom:1px dotted #3399CC;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+color: #3399CC;
+border-bottom:1px dotted #663300;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+
+#top
+{
+width:960px;
+height:120px;
+margin: 1em auto;
+margin-bottom:-5px;
+background-color:#fff;
+background-image:url(images/banner.jpeg);
+background-repeat:no-repeat;
+}
+
+#header { 
+background: #fff;
+ }
+
+
+
+
+#navlist
+{
+width: 960px;
+text-align: left;
+margin: 0 auto;
+margin-bottom:25px;
+padding: 0;
+text-indent: 0;
+list-style-type: none;
+}
+
+#navlist li
+{
+padding: 3px;
+margin: 27px;
+text-indent: 0;
+display: inline;
+}
+
+#navlist li a
+{
+letter-spacing: 2px;
+text-decoration: none;
+color: #663300;
+font-size: 14px;
+padding: 0 2px;
+}
+
+#navlist li a:hover
+{
+color: #3399CC;
+border-bottom:2px dashed #663300;
+}
+
+#navlist a#current
+{
+color: #3399CC;
+border-top:  none;
+border-bottom:none;
+}
+
+
+
+#bottom
+{	
+	margin: 1em auto;
+	margin-top:0px;
+	padding-left:10px;
+	width:950px;
+	height:200px;
+	color:#663300;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	text-align:right;
+	background-image:url(apftr.png);
+
+	
+}
+
