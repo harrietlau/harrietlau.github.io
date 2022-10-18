@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*        background-image:url(images/background.jpg); */
+
 body {
 	font: 14px Verdana, Arial, Helvetica, sans-serif;
 	font-family:"Avenir Next", Arial, Helvetica, sans-serif;
@@ -9,8 +11,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #663300;
-	background-image:url(images/background.jpg);
-	background-repeat:no-repeat;
+        background-image:url(images/background.jpg); 
 	background-size: cover;
 }
 
@@ -51,7 +52,7 @@ border-bottom:1px dotted #663300;
 
 /* ~~ this fixed width container surrounds all other elements ~~ */
 .container {
-	width: 960px;
+	width: 800px;
 	background: #FFF;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
@@ -84,15 +85,14 @@ border-bottom:1px dotted #663300;
 }
 
 
-
 #top
 {
-width:960px;
+width:800px;
 height:120px;
 margin: 1em auto;
 margin-bottom:-5px;
 background-color:#fff;
-background-image:url(images/banner.jpeg);
+background-image:url(images/banner1.jpg);
 background-repeat:no-repeat;
 }
 
@@ -105,7 +105,7 @@ background: #fff;
 
 #navlist
 {
-width: 960px;
+width: 800px;
 text-align: left;
 margin: 0 auto;
 margin-bottom:25px;
@@ -151,14 +151,12 @@ border-bottom:none;
 	margin: 1em auto;
 	margin-top:0px;
 	padding-left:10px;
-	width:950px;
+	width:790px;
 	height:200px;
 	color:#663300;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
 	text-align:right;
-	background-image:url(apftr.png);
-
-	
+        background: #fff;
 }
 
